@@ -41,6 +41,6 @@ public class ModuleServiceImpl implements ModuleService {
         }
 
         // Throw a custom exception if the module with the given ID is not found
-        throw new ProductModuleException(ProductModuleConstants.MODULE_ID_DOS_NOT_EXIST);
+        throw new ProductModuleException(ProductModuleConstants.MODULE_ID_DOES_NOT_EXIST);
     }
 }
