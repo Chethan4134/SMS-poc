@@ -19,7 +19,6 @@ public class ProductConfig implements WebMvcConfigurer{
                 .addPathPatterns("/search/Product/byId")
                 .addPathPatterns("/search/Product/module/byId");
 
-
     }
 
 }

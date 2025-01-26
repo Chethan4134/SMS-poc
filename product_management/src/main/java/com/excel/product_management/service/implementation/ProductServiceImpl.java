@@ -63,7 +63,7 @@ public class ProductServiceImpl implements ProductService {
         Optional<Product> optional = productRepository.findByProductId(productId);
 
         if (optional.isPresent()) {
-            List<com.excel.product_management.entity.Module> modules = optional.get().getModules();
+            List<Module> modules = optional.get().getModules();
 
             if (!modules.isEmpty()) {
                 return modules.stream().map(m -> ModuleDto.builder()
